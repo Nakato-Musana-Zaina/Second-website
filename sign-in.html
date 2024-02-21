@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+        #form{
+            border:solid 1px;
+        width: 50%;
+        padding: 24px;
+        margin: 0 auto;
+        }
+        .input{
+            padding: 12px 16px;
+            width:80%;
+            border-radius: 5px;
+            border: solid 1px;
+        }
+        .button{
+            padding: 6px 12px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            color: aliceblue;
+            background-color: rgb(10, 10, 10);
+        }
+        .images{
+            text-align: center;
+        }
+        #signin{
+            color: white;
+            text-decoration: none;
+        }
+        .icons{
+            margin-left: 50%;
+        }
+        .signup{
+            color: black;
+        }
+        .class{
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+<form id="form">
+
+    <p> Don't ave an account? <b> <a href="index.html" class="signup"> Sign Up</a> </b> </p>
+    <br/>
+    <h2> Sign In</h2>
+    <br/>
+    <label for="email"> email address:</label>
+    <br/>
+    <input name="email" text="emailaddress" placeholder="email address" class="input"/>
+    <br/>
+    <br/>
+    <label for="password"> Password:</label>
+    <br/>
+    <input name="password" type="password" placeholder="password" class="input"/>
+    <br/>
+    <br/>
+    <input type="checkbox"> I've Read And Agree With The <b> Terms Of Service</b> And Our <b>Privacy Policy<b> <br>
+    <br/>
+    <br/>
+
+    <button class="button"> <a href="table.html" id="signin"> Sign In</a> </button>
+    <br/>
+    <br/>
+    <p class="line">________________________________________sign in with___________________________________</p>
+   <!--<div> 
+<footer> 
+
+</footer>
+    </div>
+
+
+
+   <p class="images"><img src="http://tinyurl.com/4xk5e4ht" alt="facebook logo" style="height: 50px; width: 50px;">  <img src="data:image/png;base64,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" alt="google logo" style="height: 40px; width: 40px;"></p>--> 
+   <div class="icons">
+    <i class="fa-brands fa-google"></i>
+    <i class="fa-brands fa-facebook"></i>
+   </div>
+</form>
+ 
+</body>
+</html>
